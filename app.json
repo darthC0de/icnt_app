@@ -1,11 +1,8 @@
 {
   "expo": {
-    "name": "ICNT Services",
-    "slug": "icnt",
-    "platforms": [
-      "ios",
-      "android"
-    ],
+    "name": "icnt_app",
+    "owner":"darthcode",
+    "slug": "icnt_app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -22,6 +19,15 @@
     ],
     "ios": {
       "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#9A1B1F"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
     }
   }
 }
