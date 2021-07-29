@@ -11,10 +11,10 @@ jobs:
         id: current_pr_branch
         uses: stefanbauer/action-current-pr-branch@v1
         with:
-          github_token: ${{ secrets.TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
       - name: Delete merged branch
         uses: koj-co/delete-merged-action@master
         with:
           branches: "!master,!main, ${{ steps.current_pr_branch.outputs.branch_name }}"
         env:
-          GITHUB_TOKEN: "${{ secrets.TOKEN }}"
+          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
