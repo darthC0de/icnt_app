@@ -6,7 +6,7 @@ on:
 jobs:
   Publish_Updates:
     name: Install and publish
-    if: "${{github.repository_owner == darthC0de}}"
+    if: "${{github.repository_owner == 'darthC0de'}}"
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
