@@ -32,15 +32,46 @@
   },
   "private": true,
   "renovate":{
-    "branchPrefix": "[Updates]:",
+    "branchPrefix": "updates/",
     "packageRules": [
       {
-        "updateTypes": ["minor", "patch", "pin", "digest"],
+        "updateTypes": [
+          "minor",
+          "patch",
+          "pin",
+          "digest"
+        ],
         "automerge": true
+      },
+      {
+        "updateTypes": [
+          "major"
+        ],
+        "automerge": false
       }
     ],
+    "assignAutomerge": true,
+    "assignees": [
+      "rodcordeiro",
+      "JuniorAlvess"
+    ],
+    "labels": [
+      "dependencies"
+    ],
+    "recreateClosed": true,
+    "rebaseWhen": "conflicted",
+    "vulnerabilityAlerts": {
+      "labels": [
+        "security"
+      ],
+      "assignees": [
+        "@rodcordeiro"
+      ]
+    },
     "extends": [
-      "config:base"
+      "config:base",
+      ":dependencyDashboard",
+      "github>whitesource/merge-confidence:beta"
     ]
   }
 }
