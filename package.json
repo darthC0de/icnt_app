@@ -14,7 +14,7 @@
     "@react-navigation/stack": "5.14.9",
     "expo": "42.0.3",
     "expo-status-bar": "1.0.4",
-    "expo-updates": "0.2.14",
+    "expo-updates": "0.8.5",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-native": "https://github.com/expo/react-native/archive/sdk-42.0.0.tar.gz",
